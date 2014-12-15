@@ -37,19 +37,9 @@ class wordpress::install {
     require => File[ "/vagrant/wp-cli.phar" ]
   }
 
-  exec {  'wp core download':
-     path    => [ '/bin', '/usr/bin', '/usr/local/bin','/vagrant/wordpress/'],
-     command => 'wp core download',  
-     user => 'vagrant',
-     cwd => '/vagrant/wordpress/',
-     require => Exec[ 'rename wp-cli' ,'load-db']
-  }
 
-# Copy a working wp-config.php file for the vagrant setup.
-  file { '/vagrant/wordpress/wp-config.php':
-    source => 'puppet:///modules/wordpress/wp-config.php',
-    require=> Exec[ 'wp core download' ]
-  }
+
+
 
   exec {  'wp core update-db':
      path    => [ '/bin', '/usr/bin', '/usr/local/bin','/vagrant/wordpress/'],
