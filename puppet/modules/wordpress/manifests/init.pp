@@ -46,7 +46,7 @@ class wordpress::install {
      command => 'wp core update-db',  
      user => 'vagrant',
      cwd => '/vagrant/wordpress/',
-     require => File[ '/vagrant/wordpress/wp-config.php' ]
+     
   }
 
 
