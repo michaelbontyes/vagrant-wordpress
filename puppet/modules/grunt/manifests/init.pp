@@ -70,7 +70,7 @@ class grunt::install{
   
 
   # finally install grunt
-  exec { 'npm install -g grunt-cli bower pako':,
+  exec { 'npm install -g grunt-cli bower pako':
     command => '/usr/bin/npm install -g grunt-cli bower pako',
     require => Exec['npm'],
   }

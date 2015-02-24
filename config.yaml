@@ -3,12 +3,12 @@ vagrantfile-local:
     vm:
         box: trusty64
         box_url: http://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box
-        hostname: 'yourprojectname'
+        hostname: 'vagrant-wp.edlfb.net'
         memory: '2048'
         cpus: '1'
         chosen_provider: virtualbox
         network:
-            private_network: 192.168.90.90
+            private_network: 192.168.77.77
             forwarded_port:
                 CNLMNgtcBCbD:
                     host: '7300'

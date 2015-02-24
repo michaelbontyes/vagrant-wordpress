@@ -33,7 +33,7 @@ class wordpress::install {
   # Symlink it across
   exec { 'rename wp-cli':
     path    => [ '/bin', '/usr/bin', '/usr/local/bin' ],
-    command => "sudo mv /vagrant/wp-cli.phar /vagrant/wordpress/wp",
+    command => "sudo mv /vagrant/wp-cli.phar /usr/local/bin/wp",
     require => File[ "/vagrant/wp-cli.phar" ]
   }
 
@@ -41,13 +41,7 @@ class wordpress::install {
 
 
 
-  exec {  'wp core update-db':
-     path    => [ '/bin', '/usr/bin', '/usr/local/bin','/vagrant/wordpress/'],
-     command => 'wp core update-db',  
-     user => 'vagrant',
-     cwd => '/vagrant/wordpress/',
-     
-  }
+
 
 
   # Import a MySQL database for a basic wordpress site.

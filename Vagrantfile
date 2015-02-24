@@ -137,7 +137,7 @@ Vagrant.configure('2') do |config|
   end
 
   config.vm.provision "shell",
-  inline: "echo  $'\n'The Vagrant WP VM is ready http://yourprojectname/ $'\n'wp-admin user: admin / pwd: vagrant $'\n'phpMyAdmin user: wordpress / pwd: wordpress $'\n' "
+  inline: "echo  $'\n'The Vagrant WP VM is ready http://vagrant-wp.edlfb.net/ $'\n'wp-admin user: admin / pwd: vagrant $'\n'phpMyAdmin user: wordpress / pwd: wordpress $'\n' "
 
 end
 
