@@ -51,4 +51,17 @@ class wppuppet::git(
     command => 'git clone https://paul:moardonutz@stash.djeholdings.com/scm/wpp/usersnap.git /vagrant/wordpress/wp-content/plugins/usersnap/',
     require => Package['git'],
     }
+
+      exec { 'acf':
+    path => '/usr/bin',
+    command => 'git clone https://paul:moardonutz@stash.djeholdings.com/scm/wpp/advanced-custom-fields.git /vagrant/wordpress/wp-content/plugins/advanced-custom-fields/',
+    require => Package['git'],
+    } 
+
+      exec { 'w3tc':
+    path => '/usr/bin',
+    command => 'git clone https://paul:moardonutz@stash.djeholdings.com/scm/wpp/w3-total-cache.git /vagrant/wordpress/wp-content/plugins/w3-total-cache/',
+    require => Package['git'],
+    } 
+
 }
