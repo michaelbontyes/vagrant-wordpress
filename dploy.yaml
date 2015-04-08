@@ -1,0 +1,23 @@
+dev:
+    scheme: sftp
+    host: ftp.ord1-1.websitesettings.com
+    port: 22
+    user: **
+    pass: 9E35sSLt
+    exclude: ["**/*.scss", "**/node_modules","**/sass","wp","**/Gruntfile.js","**/*.log",**/*.orig","**/package.json","**/*.less"]
+  
+    path:
+        local: wordpress/wp-content/
+        remote: /wp-content
+
+staging:
+    scheme: sftp
+    host: ftp.ord1-1.websitesettings.com
+    port: 22
+    user: **
+    pass: 9E35sSLt
+    exclude: ["**/*.scss", "**/node_modules","**/sass","wp","**/Gruntfile.js","**/*.log",**/*.orig","**/package.json","**/*.less"]
+
+    path:
+        local: wordpress/wp-content/
+        remote: /wp-content
