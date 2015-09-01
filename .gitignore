@@ -1,3 +1,7 @@
 .vagrant/
 latest.tar.gz
 node_modules
+wordpress/wp-content/uploads/backupbuddy_backups/
+**/tmp/
+wordpress/wp-content/uploads/uploads/
+wordpress/wp-content/uploads/pb_backupbuddy/

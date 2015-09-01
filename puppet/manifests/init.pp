@@ -10,4 +10,4 @@ class { 'mysql::install': }
 class { 'wordpress::install': }
 class { 'phpmyadmin::install': }
 class { 'git::install': }
-class { 'wppuppet::git': }
+#class { 'wppuppet::git': }
