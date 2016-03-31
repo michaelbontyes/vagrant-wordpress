@@ -87,4 +87,6 @@ if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 
 /** Sets up WordPress vars and included files. */
+//Define the directory of media file
+define('UPLOADS','wp-content/uploads/media');
 require_once(ABSPATH . 'wp-settings.php');
