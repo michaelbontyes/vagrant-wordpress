@@ -4,7 +4,7 @@ dev:
     port: 22
     user: **
     pass: 9E35sSLt
-    exclude: ["**/*.scss", "**/node_modules","**/sass","wp","**/Gruntfile.js","**/*.log","**/*.orig","**/package.json","**/*.less"]
+    exclude: ["**/*.scss", "**/node_modules","**/sass","wp","**/Gruntfile.js","**/*.log","**/*.orig","**/package.json","**/*.less","**/sitepress-multilingual-cms/**","**/backupbuddy/**"]
   
     path:
         local: wordpress/wp-content/
@@ -16,7 +16,7 @@ staging:
     port: 22
     user: **
     pass: 9E35sSLt
-    exclude: ["**/*.scss", "**/node_modules","**/sass","wp","**/Gruntfile.js","**/*.log","**/*.orig","**/package.json","**/*.less"]
+    exclude: ["**/*.scss", "**/node_modules","**/sass","wp","**/Gruntfile.js","**/*.log","**/*.orig","**/package.json","**/*.less","**/sitepress-multilingual-cms/**","**/backupbuddy/**"]
 
     path:
         local: wordpress/wp-content/
