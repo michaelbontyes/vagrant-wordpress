@@ -1,0 +1,24 @@
+adapter: sftp  
+port: 22  
+host: 192.168.0.1  
+username: webdeploy  
+password: supersecurepasswordbro!  
+local_path: wordpress/wp-content  
+path: /var/www/vhosts/mysite-dev.edlfb.net/wp-content  
+
+exclude:    
+        - .gitignore  
+        - index.php  
+        - dandelion.yml  
+        - .vagrant  
+        - uploads  
+        - .htaccess  
+        - wp-config.php  
+        - themes/custom/Gruntfile.js  
+        - themes/custom/README.md  
+        - themes/custom/bower.json  
+        - themes/custom/package.json  
+        - themes/custom/sass/   
+
+additional:  
+        - wordpress/wp-content/themes/custom/theme/style.css: themes/custom/theme/style.css  
