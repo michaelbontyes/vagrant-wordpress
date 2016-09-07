@@ -20,3 +20,10 @@ wordpress/wp-content/uploads/
 wordpress/wp-content/uploads/pb_backupbuddy/
 wordpress/wp-content/uploads/backupbuddy_backups/
 wordpress/wp-content/w3tc-config/
+
+#Tests specific ignores
+tests/_output/*
+composer.lock
+composer.phar
+installer
+vendor/*
