@@ -1,24 +1,38 @@
-adapter: sftp  
-port: 22  
-host: 192.168.0.1  
-username: webdeploy  
-password: supersecurepasswordbro!  
-local_path: wordpress/wp-content  
-path: /var/www/vhosts/mysite-dev.edlfb.net/wp-content  
+adapter: sftp
+port: 22
+host: 192.168.0.1
+username: webdeploy
+password: supersecurepasswordbro!
+local_path: wordpress/wp-content
+path: /var/www/vhosts/mysite-dev.edlfb.net/wp-content
 
-exclude:    
-        - .gitignore  
-        - index.php  
-        - dandelion.yml  
-        - .vagrant  
-        - uploads  
-        - .htaccess  
-        - wp-config.php  
-        - themes/custom/Gruntfile.js  
-        - themes/custom/README.md  
-        - themes/custom/bower.json  
-        - themes/custom/package.json  
-        - themes/custom/sass/   
+exclude:
+        - .gitignore
+        - index.php
+        - dandelion.yml
+        - .vagrant
+        - uploads
+        - .htaccess
+        - wp-config.php
+        - advanced-cache.php
+        - db.php
+        - themes/custom/Gruntfile.js
+        - themes/custom/README.md
+        - themes/custom/bower.json
+        - themes/custom/package.json
+        - themes/custom/sass/
+        - themes/custom/.sass-cache/
+        - themes/custom/sitemap.json/
+        - themes/custom/node_modules/
+        - themes/custom/bower_components/
+        - wp-content/themes/custom/Gruntfile.js
+        - wp-content/themes/custom/README.md
+        - wp-content/themes/custom/bower.json
+        - wp-content/themes/custom/package.json
+        - wp-content/themes/custom/sass/
+        - wp-content/themes/custom/.sass-cache/
+        - wp-content/themes/custom/node_modules/
+        - wp-content/themes/custom/bower_components/   
 
-additional:  
-        - wordpress/wp-content/themes/custom/theme/style.css: themes/custom/theme/style.css  
+additional:
+        - wordpress/wp-content/themes/custom/theme/style.css: themes/custom/theme/style.css
