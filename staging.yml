@@ -16,6 +16,14 @@ exclude:
         - wp-config.php
         - advanced-cache.php
         - db.php
+        - Gruntfile.js
+        - bower.json
+        - package.json
+        - sass
+        - .sass-cache
+        - sitemap.json
+        - node_modules
+        - bower_components
         - themes/custom/Gruntfile.js
         - themes/custom/README.md
         - themes/custom/bower.json
