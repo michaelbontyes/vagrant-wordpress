@@ -79,6 +79,7 @@ define('WPLANG', '');
  * in their development environments.
  */
 define('WP_DEBUG', true);
+define('FORCE_SSL_ADMIN', true);
 
 /* That's all, stop editing! Happy blogging. */
 
