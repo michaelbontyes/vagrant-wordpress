@@ -7,7 +7,6 @@ node_modules
 backupbuddy_backups/
 pb_backupbuddy/
 .sass-cache
-style.css
 style.min.css
 style.css.map
 script.min.js
