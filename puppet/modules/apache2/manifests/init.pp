@@ -65,22 +65,22 @@ class apache2::install {
     require => Package['apache2'],
     notify  => Service['apache2'],
   }
- file { '/root/edlfb14.crt':
+ file { '/root/edlfb16.crt':
     ensure  => file,
     owner   => 'root',
     group   => 'root',
     mode    => '0644',
-    source  => '/vagrant/files/root/edlfb14.crt',
+    source  => '/vagrant/files/root/edlfb16.crt',
     require => Package['apache2'],
     notify  => Service['apache2']
   }
   
-   file { '/root/edlfb14.key':
+   file { '/root/edlfb16.key':
     ensure  => file,
     owner   => 'root',
     group   => 'root',
     mode    => '0644',
-    source  => '/vagrant/files/root/edlfb14.key',
+    source  => '/vagrant/files/root/edlfb16.key',
     require => Package['apache2'],
     notify  => Service['apache2']
   }
