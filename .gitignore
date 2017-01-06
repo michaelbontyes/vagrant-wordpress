@@ -4,12 +4,14 @@ sql/
 tmp
 latest.tar.gz
 node_modules
+bower_components
 backupbuddy_backups/
 pb_backupbuddy/
 .sass-cache
 style.min.css
 style.css.map
 script.min.js
+scripts.min.js
 .htaccess
 npm-debug.log
 wordpress/wp-content/.rev
