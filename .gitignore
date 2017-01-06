@@ -21,8 +21,8 @@ wordpress/wp-content/uploads/backupbuddy_backups/
 wordpress/wp-content/w3tc-config/
 
 #Tests specific ignores
-tests/_output/*
-composer.lock
-composer.phar
-installer
-vendor/*
+/tests/_output/*
+/composer.lock
+/composer.phar
+/installer
+/vendor
